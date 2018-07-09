@@ -10,6 +10,7 @@ import { IProduct } from './product';
 export class ProductListComponent implements OnInit {
   isHidden: boolean = false;
   pageTitle: string = 'Product List';
+  ratingSubtitle: string = '';
   imageWidth: number = 50;
   imageMargin: number = 10;
 
@@ -94,5 +95,8 @@ export class ProductListComponent implements OnInit {
     filterBy = filterBy.toLowerCase();
     return this.products.filter((product: IProduct) =>
       product.productName.toLocaleLowerCase().indexOf(filterBy) !== -1);
+  }
+  onRatingClicked(message:string):void{
+    this.ratingSubtitle = message;
   }
 }
