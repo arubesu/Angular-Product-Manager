@@ -8,7 +8,7 @@ import { ProductListComponent } from './products/product-list/product-list.compo
 import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
 import { StarComponent } from './shared/star.component';
 import { ProductService } from './products/product.service';
-import { ProductDetailComponent } from './products/product-detail.component';
+import { ProductDetailComponent } from './products/detail/product-detail.component';
 import { WelcomeComponent } from './home/welcome.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';

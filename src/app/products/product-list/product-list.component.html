@@ -37,7 +37,7 @@
               <img [src]='product.imageUrl' [hidden]='isHidden' [title]='product.productName' [style.width.px]='imageWidth' [style.margin.px]='imageMargin'>
             </td>
             <td>
-              <a routerLink='{{product.productId}}'> {{ product.productName}}</a>
+              <a routerLink='{{product.id}}'> {{ product.productName}}</a>
             </td>
             <td>{{ product.productCode | convertToSpaces: '-'}}</td>
             <td>{{ product.releaseDate}}</td>
