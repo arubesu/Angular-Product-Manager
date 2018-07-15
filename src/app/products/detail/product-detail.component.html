@@ -1,3 +1,31 @@
-<p>
-  product-detail works!
-</p>
+<div class='panel panel-primary ' *ngIf='product'>
+  <div class='panel-heading'>
+    {{title}}
+  </div>
+  <mat-card class='card container' *ngIf='product'>
+    <mat-card-header>
+      <mat-card-title>{{product.productName }}</mat-card-title>
+      <mat-card-subtitle>{{product.productCode}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="product.imageUrl" [alt]="product.productName">
+    <mat-card-content>
+      <p>
+        {{product.description}}
+      </p>
+      <p>
+        Release Date :  {{product.releaseDate}}
+      </p>
+      <p>
+        {{product.price | currency}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <div class='panel-footer'>
+        <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+          <i class='glyphicon glyphicon-chevron-left'></i> Back
+        </a>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
