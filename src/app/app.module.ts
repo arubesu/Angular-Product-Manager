@@ -7,6 +7,7 @@ import { WelcomeComponent } from './home/welcome.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductModule } from './products/product.module';
+import { AdminModule } from './admin/admin.module';
 
 
 
@@ -20,7 +21,8 @@ import { ProductModule } from './products/product.module';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    ProductModule    
+    ProductModule,
+    AdminModule    
   ],
   bootstrap: [AppComponent]
 })
